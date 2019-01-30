@@ -2,13 +2,13 @@
 
 List of pages:
 
-* [Index](https://roddyr2.github.io/HyFinHTML/index.html)
-* [Wallet](https://roddyr2.github.io/HyFinHTML/wallet.html)
-* [Terminal](https://roddyr2.github.io/HyFinHTML/terminal.html)
-* [Alt-Coin Sales Summary](https://roddyr2.github.io/HyFinHTML/sales-summary.html)
-* [Support](https://roddyr2.github.io/HyFinHTML/support.html)
-* [Partners](https://roddyr2.github.io/HyFinHTML/partners.html)
-* [Profile](https://roddyr2.github.io/HyFinHTML/profile.html)
-* [Settings](https://roddyr2.github.io/HyFinHTML/settings.html)
-* [Security](https://roddyr2.github.io/HyFinHTML/security.html)
-* [Receipt](https://roddyr2.github.io/HyFinHTML/receipt.html)
+* [Index](https://kamuz.github.io/hyfin/index.html)
+* [Wallet](https://kamuz.github.io/hyfin/wallet.html)
+* [Terminal](https://kamuz.github.io/hyfin/terminal.html)
+* [Sales Summary](https://kamuz.github.io/hyfin/sales-summary.html)
+* [Support](https://kamuz.github.io/hyfin/support.html)
+* [Partners](https://kamuz.github.io/hyfin/partners.html)
+* [Profile](https://kamuz.github.io/hyfin/profile.html)
+* [Settings](https://kamuz.github.io/hyfin/settings.html)
+* [Security](https://kamuz.github.io/hyfin/security.html)
+* [Receipt](https://kamuz.github.io/hyfin/receipt.html)
