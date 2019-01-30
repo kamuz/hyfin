@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hyfin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="sales-summary">
+    <div class="w3-sidebar w3-bar-block w3-indigo sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn w3-hide-large" onclick="closeNav()">&times;</a>
+        <div class="logo"><a href="https://roddyr2.github.io/HyFinHTML/"><img src="img/logo.png" alt="Hyfin"></a><span class="status"><span class="indicator"></span>Live</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="w3-bar-item active">Home</a></li>
+            <li><a href="wallet.html" class="w3-bar-item">Wallet</a></li>
+            <li><a href="terminal.html" class="w3-bar-item">Terminal</a></li>
+            <li><a href="#" class="w3-bar-item">Reports</a></li>
+            <li><a href="#" class="w3-bar-item">Integrations</a></li>
+            <li><a href="support.html" class="w3-bar-item">Support</a></li>
+            <li><a href="partners.html" class="w3-bar-item">Partners</a></li>
+        </ul>
+    </div>
+    <div class="content filter-bar">
+        <div class="w3-bar">
+            <span onclick="openNav()" class="w3-hide-large toggle-menu">&#9776;</span>
+            <h1 class="w3-hide-small">ABC Commerce LLC</h1>
+            <a href="#" class="w3-bar-item w3-button w3-right"><span class="icon-quit"></span></a>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button user">
+                    <img src="img/avatar.png" alt="User Avatar">
+                    <div class="text w3-hide-small">
+                        <p class="message">Welcome back,</p>
+                        <p class="full-name">Jonh Dou</p>
+                    </div>
+                    <i class="arrow-down"></i>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="profile.html" class="w3-bar-item w3-button w3-text-black">Profile</a>
+                    <a href="settings.html" class="w3-bar-item w3-button w3-text-black">Settings</a>
+                    <a href="security.html" class="w3-bar-item w3-button w3-text-black">Security</a>
+                    <a href="receipt.html" class="w3-bar-item w3-button w3-text-black">Receipt</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button notifications">
+                    <span class="icon-bell"></span>
+                    <span class="count">6</span>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">New BTC Sale - $125.78</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-email.png" alt="icon">Message from Support Ticket #12345</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please Update Business Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please add Wallet Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">Payment Request Received - Ref# 2228811</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-secure.png" alt="icon">Recent Sign-In from Denver, CO</a>
+                </div>
+            </div>
+        
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <h3><img src="img/logo-small.png" alt="Logo Small">Reports</h3>
+            </div>
+            <div class="w3-col m9">
+                <form action="#">
+                    <div class="w3-row">
+                        <div class="w3-col m4">
+                            <input type="text" name="datetimes" class="w3-input"/>
+                        </div>
+                        <div class="w3-col m3">
+                            <select name="a" id="a" class="w3-select">
+                                <option value="">All day</option>
+                                <option value="">Two</option>
+                                <option value="">Three</option>
+                            </select>
+                        </div>
+                        <div class="w3-col m3">
+                            <select name="b" id="b" class="w3-select">
+                                <option value="">Summary</option>
+                                <option value="">Two</option>
+                                <option value="">Three</option>
+                            </select>
+                        </div>
+                        <div class="w3-col m2">
+                            <input type="submit" class="btn-round btn-green btn-center" value="Export">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <nav class="secondary-menu">
+                    <ul>
+                        <li><a class="active" href="#">Alt-Coin Sales Summary</a></li>
+                        <li><a href="#">Payment Types</a></li>
+                        <li><a href="#">finTX Transactions</a></li>
+                        <li><a href="#">Withdrawal History</a></li>
+                        <li><a href="#">Refunds</a></li>
+                        <li><a href="#">Wallet(s)</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w3-col m9">
+                <div class="w3-card sales-summary-content">
+                    <div class="w3-container">
+                        <h2>Summary</h2>
+                        <div class="w3-row">
+                            <div class="w3-col m12 l4">
+                                <div class="summary-results">
+                                    <div class="summary-number">$31,258.78</div>
+                                    <div class="summary-description">Gross Alt-Coin Sales</div>
+                                </div>
+                            </div>
+                            <div class="w3-col m12 l4">
+                                <div class="summary-results">
+                                    <div class="summary-number">250</div>
+                                    <div class="summary-description">Transactions</div>
+                                </div>
+                            </div>
+                            <div class="w3-col m12 l4">
+                                <div class="summary-results">
+                                    <div class="summary-number">$250.05</div>
+                                    <div class="summary-description">Average Ticket</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-chart">
+                            <canvas id="summary-chart" height="120"></canvas>
+                        </div>
+                        <div class="table-wrap first-table">
+                            <table class="w3-table shadow">
+                                <tr>
+                                    <th></th>
+                                    <th>Amount</th>
+                                    <th>Refunds</th>
+                                    <th>Net</th>
+                                </tr>
+                                <tr>
+                                    <td>Gross Sales</td>
+                                    <td>$31258.78</td>
+                                    <td>$0</td>
+                                    <td>$31258.78</td>
+                                </tr>
+                                <tr>
+                                    <td>Fee Discount</td>
+                                    <td>$1094.05</td>
+                                    <td>$0</td>
+                                    <td>$1094.05</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Collected</td>
+                                    <td>$30164.73</td>
+                                    <td>$0</td>
+                                    <td>$30164.73</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table-wrap second-table">
+                            <table class="w3-table shadow">
+                                <tr>
+                                    <th>By Payment Type</th>
+                                    <th>Total Amount</th>
+                                </tr>
+                                <tr>
+                                    <td>BTC</td>
+                                    <td>$10513.85</td>
+                                </tr>
+                                <tr>
+                                    <td>ETH</td>
+                                    <td>$9777.85</td>
+                                </tr>
+                                <tr>
+                                    <td>XRP</td>
+                                    <td>$3200.12</td>
+                                </tr>
+                                <tr>
+                                    <td>BCH</td>
+                                    <td>$1700.12</td>
+                                </tr>
+                                <tr>
+                                    <td>HYF</td>
+                                    <td>$1325.12</td>
+                                </tr>
+                                <tr>
+                                    <td>LTC</td>
+                                    <td>$1100.02</td>
+                                </tr>
+                                <tr>
+                                    <td>EOS</td>
+                                    <td>$789.25</td>
+                                </tr>
+                                <tr>
+                                    <td>ADA</td>
+                                    <td>$345.25</td>
+                                </tr>
+                                <tr>
+                                    <td>XLM</td>
+                                    <td>$894.35</td>
+                                </tr>
+                                <tr>
+                                    <td>NEO</td>
+                                    <td>$255.25</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

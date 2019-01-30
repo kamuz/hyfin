@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hyfin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="receipt">
+    <div class="w3-sidebar w3-bar-block w3-indigo sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn w3-hide-large" onclick="closeNav()">&times;</a>
+        <div class="logo"><a href="https://roddyr2.github.io/HyFinHTML/"><img src="img/logo.png" alt="Hyfin"></a><span class="status"><span class="indicator"></span>Live</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="w3-bar-item active">Home</a></li>
+            <li><a href="wallet.html" class="w3-bar-item">Wallet</a></li>
+            <li><a href="terminal.html" class="w3-bar-item">Terminal</a></li>
+            <li><a href="#" class="w3-bar-item">Reports</a></li>
+            <li><a href="#" class="w3-bar-item">Integrations</a></li>
+            <li><a href="support.html" class="w3-bar-item">Support</a></li>
+            <li><a href="partners.html" class="w3-bar-item">Partners</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="w3-bar">
+            <span onclick="openNav()" class="w3-hide-large toggle-menu">&#9776;</span>
+            <h1 class="w3-hide-small">ABC Commerce LLC</h1>
+            <a href="#" class="w3-bar-item w3-button w3-right"><span class="icon-quit"></span></a>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button user">
+                    <img src="img/avatar.png" alt="User Avatar">
+                    <div class="text w3-hide-small">
+                        <p class="message">Welcome back,</p>
+                        <p class="full-name">Jonh Dou</p>
+                    </div>
+                    <i class="arrow-down"></i>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="profile.html" class="w3-bar-item w3-button w3-text-black">Profile</a>
+                    <a href="settings.html" class="w3-bar-item w3-button w3-text-black">Settings</a>
+                    <a href="security.html" class="w3-bar-item w3-button w3-text-black">Security</a>
+                    <a href="receipt.html" class="w3-bar-item w3-button w3-text-black">Receipt</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button notifications">
+                    <span class="icon-bell"></span>
+                    <span class="count">6</span>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">New BTC Sale - $125.78</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-email.png" alt="icon">Message from Support Ticket #12345</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please Update Business Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please add Wallet Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">Payment Request Received - Ref# 2228811</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-secure.png" alt="icon">Recent Sign-In from Denver, CO</a>
+                </div>
+            </div>
+        
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col m12 l12">
+                <div class="w3-card">
+                    <header class="w3-container">
+                        <h3><img src="img/logo-small.png" alt="Logo Small">Receipt</h3>
+                    </header>
+                    <div class="w3-container">
+                        <div class="email-notifications">
+                            <div class="w3-row">
+                                <div class="w3-col m6">
+                                    <h2>Logo</h2>
+                                    <div style="margin-top: 20px">
+                                      <div id="dnd-container">
+                                        <span id="dnd-label"><img src="img/plus.png" alt=""></span>
+                                        <form id="dnd-form">
+                                            <input type="file" id="dnd-input">
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <form action="#">
+                                        <div class="w3-col m12" style="padding-right: 28px">
+                                            <h2>Receipt Information</h2>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Business Name</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="business-name" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Address Line 1</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="address-1" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Address Line 2</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="address-2" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>City</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="city" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>State</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input error" name="country" type="text" placeholder="Input text">
+                                                    <span class="error">Wrong State/Region</span>
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Zip</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="zip" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    &nbsp;
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="primary-contact" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row">
+                                                <div class="w3-col m12 verification">
+                                                    <h3>2-Step Verification</h3>
+                                                    <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Phone</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="phone" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Social</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="social" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Website</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="website" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Custom Text</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="custom-text" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                            <div class="w3-row w3-section">
+                                                <div class="w3-col m4">
+                                                    <label>Return Policy</label>
+                                                </div>
+                                                <div class="w3-col m8">
+                                                    <input class="w3-input" name="return-poilicy" type="text" placeholder="Input text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="w3-col m6">
+                                    <h2>Receipt Preview</h2>
+                                    <div class="bg-gray">
+                                        <div class="rounded-square"></div>
+                                        <p class="title">ABC Commerce LLC</p>
+                                        <p class="address">123 Street Dr Denver, <br>CO 80209</p>
+                                        <p class="price">$125.75</p>
+                                        <div class="price-details">
+                                            <div class="w3-row">
+                                                <div class="w3-col m7">
+                                                    <p>Item Name</p>
+                                                    <p>Item Description</p>
+                                                </div>
+                                                <div class="w3-col m5">
+                                                    <p>$120.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="w3-row">
+                                                <div class="w3-col m7">
+                                                    <p>Subtotal </p>
+                                                </div>
+                                                <div class="w3-col m5">
+                                                    <p>$120.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="w3-row">
+                                                <div class="w3-col m7">
+                                                    <p>Tax </p>
+                                                </div>
+                                                <div class="w3-col m5">
+                                                    <p>$5.75</p>
+                                                </div>
+                                            </div>
+                                            <div class="w3-row">
+                                                <div class="w3-col m7">
+                                                    <p>Total </p>
+                                                </div>
+                                                <div class="w3-col m5">
+                                                    <p><strong>$125.75</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cryptocurrency">
+                                            <div class="w3-row">
+                                                <div class="w3-col m7">
+                                                    <p>Cryptocurrency</p>
+                                                    <p>LTC</p>
+                                                </div>
+                                                <div class="w3-col m5">
+                                                    <p>3/31/18 11:25:05</p>
+                                                    <p>Order# 1236</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-policy">
+                                            <p>2018 Hyfin. All Rights Reserved. 1234 Street Dr, Boulder, CO 85555 Hyfin Privacy Policy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

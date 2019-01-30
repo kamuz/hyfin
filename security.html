@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hyfin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="security">
+    <div class="w3-sidebar w3-bar-block w3-indigo sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn w3-hide-large" onclick="closeNav()">&times;</a>
+        <div class="logo"><a href="https://roddyr2.github.io/HyFinHTML/"><img src="img/logo.png" alt="Hyfin"></a><span class="status"><span class="indicator"></span>Live</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="w3-bar-item active">Home</a></li>
+            <li><a href="wallet.html" class="w3-bar-item">Wallet</a></li>
+            <li><a href="terminal.html" class="w3-bar-item">Terminal</a></li>
+            <li><a href="#" class="w3-bar-item">Reports</a></li>
+            <li><a href="#" class="w3-bar-item">Integrations</a></li>
+            <li><a href="support.html" class="w3-bar-item">Support</a></li>
+            <li><a href="partners.html" class="w3-bar-item">Partners</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="w3-bar">
+            <span onclick="openNav()" class="w3-hide-large toggle-menu">&#9776;</span>
+            <h1 class="w3-hide-small">ABC Commerce LLC</h1>
+            <a href="#" class="w3-bar-item w3-button w3-right"><span class="icon-quit"></span></a>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button user">
+                    <img src="img/avatar.png" alt="User Avatar">
+                    <div class="text w3-hide-small">
+                        <p class="message">Welcome back,</p>
+                        <p class="full-name">Jonh Dou</p>
+                    </div>
+                    <i class="arrow-down"></i>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="profile.html" class="w3-bar-item w3-button w3-text-black">Profile</a>
+                    <a href="settings.html" class="w3-bar-item w3-button w3-text-black">Settings</a>
+                    <a href="security.html" class="w3-bar-item w3-button w3-text-black">Security</a>
+                    <a href="receipt.html" class="w3-bar-item w3-button w3-text-black">Receipt</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button notifications">
+                    <span class="icon-bell"></span>
+                    <span class="count">6</span>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">New BTC Sale - $125.78</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-email.png" alt="icon">Message from Support Ticket #12345</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please Update Business Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please add Wallet Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">Payment Request Received - Ref# 2228811</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-secure.png" alt="icon">Recent Sign-In from Denver, CO</a>
+                </div>
+            </div>
+        
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col m12 l12">
+                <div class="w3-card">
+                    <header class="w3-container">
+                        <h3><img src="img/logo-small.png" alt="Logo Small">Security</h3>
+                    </header>
+                    <div class="w3-container">
+                        <div class="email-notifications">
+                            <div class="w3-row">
+                                <div class="w3-col m12">
+                                    <h2>Password</h2>
+                                    <div class="w3-row">
+                                        <div class="w3-col m6">
+                                            <p>A strong password contains a mix of numbers, letters, and symbols.</p>
+                                        </div>
+                                        <div class="w3-col m6">
+                                            <a href="#" class="btn-round btn-green w3-right">Update Password</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="w3-row">
+                                        <div class="w3-col m12 verification">
+                                            <h2>2-Step Verification</h2>
+                                            <form action="#">
+                                                <label class="switch">
+                                                    <input type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="w3-row">
+                                        <div class="w3-col m6">
+                                            <p>You will need to enter a verification code each time you log in to the Dashboard</p>
+                                        </div>
+                                        <div class="w3-col m6">
+                                            <a href="#" class="btn-round btn-green w3-right">Update Settings</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h2>Devices</h2>
+                                    <div class="w3-row">
+                                        <div class="w3-col m6">
+                                            <p>See Sign-In Activity the past 30 Days</p>
+                                        </div>
+                                        <div class="w3-col m6">
+                                            <a href="#" class="btn-round btn-green w3-right">Sign Out of all Devices</a>
+                                        </div>
+                                    </div>
+                                    <div class="table-wrap">
+                                        <table class="w3-table shadow">
+                                            <tr>
+                                                <th>Time</th>
+                                                <th>Device</th>
+                                                <th>Location</th>
+                                                <th>IP Address</th>
+                                            </tr>
+                                            <tr>
+                                                <td>3/01/2018 09:55:05</td>
+                                                <td>Chrome Browser</td>
+                                                <td>Denver CO</td>
+                                                <td>192.65.666.333</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <p>See Suspicious Activity?  Report to Hyfin Immediately. <a href="#">Contact Here.</a></p>
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-col m12">
+                                    <hr>
+                                    <h2>Email Notifications</h2>
+                                    <form action="#">
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>New Sign-In <span>Receive emails after every sign-in</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>Password Update <span>Receive emails when the password has been changed or updated</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>Profile Updates <span>Receive emails after every update to my profile</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>Wallet Updates <span>Receive emails after every update to any Wallet addresses</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>Failed Sign-In <span>Receive emails after every fail sign-in attempt in to the Dashbaord</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>Password Recovery <span>Receive emails after every request for account password</span>
+                                        </label>
+                                    </form>
+                                    <hr>
+                                    <h2>Deactivate Account</h2>
+                                    <div class="w3-row">
+                                        <div class="w3-col m6">
+                                            <p>Deactivating your Hyfin account means you will be unable to receive or recover
+any of your payment history or account information.</p>
+                                        </div>
+                                        <div class="w3-col m6">
+                                            <a href="#" class="btn-round btn-green w3-right">Deactivate Account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

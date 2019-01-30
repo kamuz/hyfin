@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hyfin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="settings">
+    <div class="w3-sidebar w3-bar-block w3-indigo sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn w3-hide-large" onclick="closeNav()">&times;</a>
+        <div class="logo"><a href="https://roddyr2.github.io/HyFinHTML/"><img src="img/logo.png" alt="Hyfin"></a><span class="status"><span class="indicator"></span>Live</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="w3-bar-item active">Home</a></li>
+            <li><a href="wallet.html" class="w3-bar-item">Wallet</a></li>
+            <li><a href="terminal.html" class="w3-bar-item">Terminal</a></li>
+            <li><a href="#" class="w3-bar-item">Reports</a></li>
+            <li><a href="#" class="w3-bar-item">Integrations</a></li>
+            <li><a href="support.html" class="w3-bar-item">Support</a></li>
+            <li><a href="partners.html" class="w3-bar-item">Partners</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="w3-bar">
+            <span onclick="openNav()" class="w3-hide-large toggle-menu">&#9776;</span>
+            <h1 class="w3-hide-small">ABC Commerce LLC</h1>
+            <a href="#" class="w3-bar-item w3-button w3-right"><span class="icon-quit"></span></a>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button user">
+                    <img src="img/avatar.png" alt="User Avatar">
+                    <div class="text w3-hide-small">
+                        <p class="message">Welcome back,</p>
+                        <p class="full-name">Jonh Dou</p>
+                    </div>
+                    <i class="arrow-down"></i>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="profile.html" class="w3-bar-item w3-button w3-text-black">Profile</a>
+                    <a href="settings.html" class="w3-bar-item w3-button w3-text-black">Settings</a>
+                    <a href="security.html" class="w3-bar-item w3-button w3-text-black">Security</a>
+                    <a href="receipt.html" class="w3-bar-item w3-button w3-text-black">Receipt</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button notifications">
+                    <span class="icon-bell"></span>
+                    <span class="count">6</span>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">New BTC Sale - $125.78</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-email.png" alt="icon">Message from Support Ticket #12345</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please Update Business Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please add Wallet Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">Payment Request Received - Ref# 2228811</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-secure.png" alt="icon">Recent Sign-In from Denver, CO</a>
+                </div>
+            </div>
+        
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col m12 l12">
+                <div class="w3-card">
+                    <header class="w3-container">
+                        <h3><img src="img/logo-small.png" alt="Logo Small">Settings</h3>
+                    </header>
+                    <div class="w3-container">
+                        <div class="form-container">
+                            <div class="w3-row">
+                                <div class="w3-col m3">
+                                    <h2>Preferences</h2>
+                                    <form action="#">
+                                        <label for="a">Fiat Currency</label>
+                                        <select name="a" id="a" class="w3-select">
+                                            <option value="">USD</option>
+                                            <option value="">Two</option>
+                                            <option value="">Three</option>
+                                        </select>
+                                        <label for="b">Language</label>
+                                        <select name="b" id="b" class="w3-select">
+                                            <option value="">Engligh</option>
+                                            <option value="">Two</option>
+                                            <option value="">Three</option>
+                                        </select>
+                                        <label for="c">Time Zone</label>
+                                        <select name="c" id="c" class="w3-select">
+                                            <option value="">MST</option>
+                                            <option value="">Two</option>
+                                            <option value="">Three</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="w3-col m9">
+                                    <div class="w3-row left-padding">
+                                        <div class="w3-col m6 s6">
+                                            <h2>Users</h2>
+                                        </div>
+                                        <div class="w3-col m6 s6">
+                                            <a href="#" class="btn-round btn-green w3-right">Add Authorized User <img src="img/plus.png" alt="plus"></a>
+                                        </div>
+                                    </div>
+                                    <div class="w3-row users">
+                                        <div class="w3-col m12">
+                                            <div class="table-wrap">
+                                                <form action="#" class="bg-gray">
+                                                    <table class="w3-table users">
+                                                        <tr>
+                                                            <td>Main</td>
+                                                            <td>Roddy Richards</td>
+                                                            <td>roddyrichards1@gmail.com</td>
+                                                            <td><a href="#"><img src="img/penсil.png" alt="Edit"></a></td>
+                                                            <td><a href="#"><img src="img/trash.png" alt="Remove"></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Secondary</td>
+                                                            <td>None</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Authorized User #1</td>
+                                                            <td>Michael Tew</td>
+                                                            <td>mtew@sandhillrp.com</td>
+                                                            <td><a href="#"><img src="img/penсil.png" alt="Edit"></a></td>
+                                                            <td><a href="#"><img src="img/trash.png" alt="Remove"></a></td>
+                                                        </tr>
+                                                    </table>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-row notifications">
+                                <div class="w3-col m12">
+                                    <div class="w3-row">
+                                        <div class="w3-col m6 s6">
+                                            <h2>Notifications</h2>
+                                        </div>
+                                        <div class="w3-col m6 s6">
+                                            <p class="w3-right">Mange your email notifications</p>
+                                        </div>
+                                    </div>
+                                    <form action="#">
+                                        <h3>General</h3>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        Daily Sales Summary <span>Receive emails about your alt-coin sales at the end of the day.</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        Monthly and Annual Sales Summary <span>Receive emails about your alt-coin sales at the end of each month and year.</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        News and Events <span>Hear about special offers, upcoming events, news and receive business-specigic messages from Hyfin</span>
+                                        </label>
+                                        <h3>Support</h3>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        Per Support Ticket <span>Receive emails after every support ticket submission</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        Per Scheuled Call <span>Receive emails after every scheduled call request</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        Per Form Fill <span>Receive emails after every form fill submission</span>
+                                        </label>
+                                        <h3>Transactions</h3>
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        Per Payment <span>Receive emails after every payment made in cryptocurrency</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        Per Completed Blockchain Transactions <span>Receive emails after each transaction is completed through the blockchain</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        Per Refund <span>Receive emails after every refund it issued.</span>
+                                        </label>
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        Per Withdraw <span>Receive emails after every withdrawal transactions from Hyfin Wallet</span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

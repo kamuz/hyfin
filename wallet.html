@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hyfin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="wallet">
+    <div class="w3-sidebar w3-bar-block w3-indigo sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn w3-hide-large" onclick="closeNav()">&times;</a>
+        <div class="logo"><a href="https://roddyr2.github.io/HyFinHTML/"><img src="img/logo.png" alt="Hyfin"></a><span class="status"><span class="indicator"></span>Live</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="w3-bar-item active">Home</a></li>
+            <li><a href="wallet.html" class="w3-bar-item">Wallet</a></li>
+            <li><a href="terminal.html" class="w3-bar-item">Terminal</a></li>
+            <li><a href="#" class="w3-bar-item">Reports</a></li>
+            <li><a href="#" class="w3-bar-item">Integrations</a></li>
+            <li><a href="support.html" class="w3-bar-item">Support</a></li>
+            <li><a href="partners.html" class="w3-bar-item">Partners</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="w3-bar">
+            <span onclick="openNav()" class="w3-hide-large toggle-menu">&#9776;</span>
+            <h1 class="w3-hide-small">ABC Commerce LLC</h1>
+            <a href="#" class="w3-bar-item w3-button w3-right"><span class="icon-quit"></span></a>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button user">
+                    <img src="img/avatar.png" alt="User Avatar">
+                    <div class="text w3-hide-small">
+                        <p class="message">Welcome back,</p>
+                        <p class="full-name">Jonh Dou</p>
+                    </div>
+                    <i class="arrow-down"></i>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="profile.html" class="w3-bar-item w3-button w3-text-black">Profile</a>
+                    <a href="settings.html" class="w3-bar-item w3-button w3-text-black">Settings</a>
+                    <a href="security.html" class="w3-bar-item w3-button w3-text-black">Security</a>
+                    <a href="receipt.html" class="w3-bar-item w3-button w3-text-black">Receipt</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-right">
+                <a href="#" class="w3-button notifications">
+                    <span class="icon-bell"></span>
+                    <span class="count">6</span>
+                </a>
+                <div class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">New BTC Sale - $125.78</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-email.png" alt="icon">Message from Support Ticket #12345</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please Update Business Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-pencil.png" alt="icon">Please add Wallet Address</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-cool.png" alt="icon">Payment Request Received - Ref# 2228811</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="img/green-round-secure.png" alt="icon">Recent Sign-In from Denver, CO</a>
+                </div>
+            </div>
+        
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col m12 l6">
+                <div class="w3-card balance">
+                    <header class="w3-container">
+                        <h3><img src="img/logo-small.png" alt="Logo Small">Wallet Balance <span class="w3-right"><span class="indicator"></span>Real Time</span></h3>
+                    </header>
+                    <div class="w3-container fintx-transactions">
+                        <div class="bg-gray">
+                            <div class="total">
+                                <div class="left">
+                                    <div>
+                                        <div class="total-summ">$5,123.97 <span class="currency">USD</span></div>
+                                        <div class="hyf">(50,124 HYF)</div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="border-left">
+                                        <a href="#" class="btn-round btn-green">Withdraw now</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <div class="w3-row">
+                                <div class="w3-col l7">
+                                    <p>Amount AutoTransfer Today:</p>
+                                </div>
+                                <div class="w3-col l5">
+                                    <p>$21,351.01</p>
+                                </div>
+                            </div>
+                            <div class="w3-row hyf-fees">
+                                <div class="w3-col l7">
+                                    <p>HYF Fees Paid:</p>
+                                </div>
+                                <div class="w3-col l5">
+                                    <p>$747.28</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-center see-history dotted">See History</a>
+                        <a href="#" class="btn-round btn-blue btn-center">finTX Transactions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m12 l6">
+                <div class="table-content">
+                    <h3>FinSET Overview <span class="w3-right"><a href="#" class="btn-round btn-white btn-small">finSET Settings</a></span></h3>
+                    <div class="table-wrap finset-overview">
+                        <table class="w3-table main shadow">
+                            <tr>
+                                <th>Currency</th>
+                                <th>Allocate</th>
+                                <th>Wallet Address</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>BTC</td>
+                                <td>80%</td>
+                                <td>395WfHYry2vQM74zrb9AseWvuxVQxc...</td>
+                                <td><img src="img/ok.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>XVG</td>
+                                <td>5%</td>
+                                <td>38wy9pvwz5M6ATekJbH8vL2VfpD51jiy...</td>
+                                <td><img src="img/ok.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>XRP</td>
+                                <td>5%</td>
+                                <td>3HTptxwhyuRJmFKpnZ13fFRdHKAZV8...</td>
+                                <td><img src="img/ok.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>HYF</td>
+                                <td>10%</td>
+                                <td>18WkBx1d4FPzNGG5ENe6AsAwqdQhf...</td>
+                                <td><img src="img/ok.png" alt=""></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="table-content">
+                    <div class="w3-row">
+                        <div class="w3-col s6"><h3>finTX Transaction Settlement</h3></div>
+                        <div class="w3-col s6"><h3 class="w3-right"><span class="indicator"></span>Pending in Real Time</h3></div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="w3-table main shadow">
+                            <tr>
+                                <th>Type</th>
+                                <th>Time</th>
+                                <th>Wallet</th>
+                                <th>Destination Address</th>
+                                <th>Order #</th>
+                                <th>Amount USD</th>
+                                <th>Fee</th>
+                                <th>Currency Used</th>
+                                <th>Hash</th>
+                            </tr>
+                            <tr>
+                                <td>Sale</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>395WfHYry2vQM74zrb9AseWvuxVQxc...</td>
+                                <td>415</td>
+                                <td>$121</td>
+                                <td>$3</td>
+                                <td>ETH <span class="in">in</span></td>
+                                <td><a href="#">https://www.dfffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sale</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>38wy9pvwz5M6ATekJbH8vL2VfpD51jiy...</td>
+                                <td>414</td>
+                                <td>$75</td>
+                                <td>$2</td>
+                                <td>LTC <span class="in">in</span></td>
+                                <td><a href="#">https://www.dfffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>WD</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>BTC</td>
+                                <td>3HTptxwhyuRJmFKpnZ13fFRdHKAZV8...</td>
+                                <td>413</td>
+                                <td>$32</td>
+                                <td>$0</td>
+                                <td>HYF <span class="out">out</span></td>
+                                <td><a href="#">https://www.ddffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sale</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>18WkBx1d4FPzNGG5ENe6AsAwqdQhf...</td>
+                                <td>409</td>
+                                <td>$55</td>
+                                <td>$1</td>
+                                <td>BTC <span class="in">in</span></td>
+                                <td><a href="#">https://www.ddffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>Req</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>14uGXpDoZxFsjzTH2jygifR4mLi8ay4aA...</td>
+                                <td>408</td>
+                                <td>$64</td>
+                                <td>$0</td>
+                                <td>ZCT <span class="in">in</span></td>
+                                <td><a href="#">https://www.ddffhg...</a></td>
+                            </tr>
+                        </table>
+                        <a href="#" class="dotted see-all">See All</a>
+                    </div>
+                </div>
+                <div class="table-content">
+                    <h3>&nbsp; <span class="w3-right"><span class="indicator"></span>Recently Completed</span></h3>
+                    <div class="table-wrap">
+                        <table class="w3-table main shadow">
+                            <tr>
+                                <th>Type</th>
+                                <th>Time</th>
+                                <th>Wallet</th>
+                                <th>Destination Address</th>
+                                <th>Order #</th>
+                                <th>Amount USD</th>
+                                <th>Fee</th>
+                                <th>Currency Used</th>
+                                <th>Hash</th>
+                            </tr>
+                            <tr>
+                                <td>Sale</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>395WfHYry2vQM74zrb9AseWvuxVQxc...</td>
+                                <td>415</td>
+                                <td>$121</td>
+                                <td>$3</td>
+                                <td>ETH <span class="in">in</span></td>
+                                <td><a href="#">https://www.dfffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sale</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>38wy9pvwz5M6ATekJbH8vL2VfpD51jiy...</td>
+                                <td>414</td>
+                                <td>$75</td>
+                                <td>$2</td>
+                                <td>LTC <span class="in">in</span></td>
+                                <td><a href="#">https://www.dfffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>WD</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>BTC</td>
+                                <td>3HTptxwhyuRJmFKpnZ13fFRdHKAZV8...</td>
+                                <td>413</td>
+                                <td>$32</td>
+                                <td>$0</td>
+                                <td>HYF <span class="out">out</span></td>
+                                <td><a href="#">https://www.ddffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sale</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>18WkBx1d4FPzNGG5ENe6AsAwqdQhf...</td>
+                                <td>409</td>
+                                <td>$55</td>
+                                <td>$1</td>
+                                <td>BTC <span class="in">in</span></td>
+                                <td><a href="#">https://www.ddffhg...</a></td>
+                            </tr>
+                            <tr>
+                                <td>Req</td>
+                                <td>3/21/18 12:02:03</td>
+                                <td>HYF</td>
+                                <td>14uGXpDoZxFsjzTH2jygifR4mLi8ay4aA...</td>
+                                <td>408</td>
+                                <td>$64</td>
+                                <td>$0</td>
+                                <td>ZCT <span class="in">in</span></td>
+                                <td><a href="#">https://www.ddffhg...</a></td>
+                            </tr>
+                        </table>
+                        <a href="#" class="dotted see-all">See All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
